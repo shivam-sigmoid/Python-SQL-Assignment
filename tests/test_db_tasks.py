@@ -21,3 +21,5 @@ class TestClass(unittest.TestCase):
     def test_close_connection(self):
         assert self.db.close() is None
 
+    def tearDown(self):
+        self.db.close()

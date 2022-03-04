@@ -7,7 +7,6 @@ class MyDatabase:
     # To connect database and instantiate cursor
     def __init__(self, db="employees", user="postgres"):
         try:
-            # Hello
             params = config()
             self.conn = psycopg2.connect(**params)
             self.cur = self.conn.cursor()

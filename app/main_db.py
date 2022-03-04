@@ -8,6 +8,7 @@ class MyDatabase:
     def __init__(self, db="employees", user="postgres"):
         try:
             params = config()
+            # self.conn = psycopg2.connect(database=db, user=user, password=9431, port='5432')
             self.conn = psycopg2.connect(**params)
             self.cur = self.conn.cursor()
             logging.info("Database Connected")

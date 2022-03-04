@@ -260,3 +260,31 @@
 2022-03-04 12:03:23,704:INFO:Cursor and Connection Closed
 2022-03-04 12:03:23,719:INFO:Loaded to xlxs
 2022-03-04 12:03:23,744:INFO:Task 4 completed
+2022-03-04 12:54:32,982:INFO:Database Connected
+2022-03-04 12:54:32,989:INFO:Query executed - select emp1.empno, emp1.ename, emp2.ename from emp as emp1 INNER JOIN emp as emp2 on (emp1.mgr = emp2.empno);
+2022-03-04 12:54:32,989:DEBUG:Query Executed- select emp1.empno, emp1.ename, emp2.ename from emp as emp1 INNER JOIN emp as emp2 on (emp1.mgr = emp2.empno);
+2022-03-04 12:54:32,989:INFO:Cursor and Connection Closed
+2022-03-04 12:54:33,147:INFO:Loaded to xlxs
+2022-03-04 12:54:33,154:INFO:Database Connected
+2022-03-04 12:54:33,159:INFO:Update done - UPDATE jobhist SET enddate = current_date            where enddate is NULL;
+2022-03-04 12:54:33,159:DEBUG:Query Executed- UPDATE jobhist SET enddate = current_date            where enddate is NULL;
+2022-03-04 12:54:33,159:INFO:Cursor and Connection Closed
+2022-03-04 12:54:33,167:INFO:Database Connected
+2022-03-04 12:54:33,177:INFO:Query executed - SELECT emp.ename, jh.empno, dept.dname,round((jh.enddate - jh.startdate)/30) * jh.sal as total_compensation,round((enddate - startdate)/30) as emp_month_spent from jobhist as jh inner join emp on (jh.empno = emp.empno) inner join dept on (jh.deptno = dept.deptno);
+2022-03-04 12:54:33,177:DEBUG:Query Executed- SELECT emp.ename, jh.empno, dept.dname,round((jh.enddate - jh.startdate)/30) * jh.sal as total_compensation,round((enddate - startdate)/30) as emp_month_spent from jobhist as jh inner join emp on (jh.empno = emp.empno) inner join dept on (jh.deptno = dept.deptno);
+2022-03-04 12:54:33,177:INFO:Cursor and Connection Closed
+2022-03-04 12:54:33,186:INFO:Loaded to xlxs
+2022-03-04 12:54:33,194:INFO:Database Connected
+2022-03-04 12:54:33,208:INFO:Query executed - SELECT emp.ename, jh.empno, dept.dname,round((jh.enddate - jh.startdate)/30) * jh.sal as total_compensation,round((enddate - startdate)/30) as emp_month_spent from jobhist as jh inner join emp on (jh.empno = emp.empno) inner join dept on (jh.deptno = dept.deptno);
+2022-03-04 12:54:33,208:DEBUG:Query Executed- SELECT emp.ename, jh.empno, dept.dname,round((jh.enddate - jh.startdate)/30) * jh.sal as total_compensation,round((enddate - startdate)/30) as emp_month_spent from jobhist as jh inner join emp on (jh.empno = emp.empno) inner join dept on (jh.deptno = dept.deptno);
+2022-03-04 12:54:33,208:INFO:Cursor and Connection Closed
+2022-03-04 12:54:33,430:INFO:Database Connected
+2022-03-04 12:54:33,433:INFO:Query executed - select * from task_2_duplicate
+2022-03-04 12:54:33,433:DEBUG:Query Executed- select * from task_2_duplicate
+2022-03-04 12:54:33,434:INFO:Cursor and Connection Closed
+2022-03-04 12:54:33,442:INFO:Database Connected
+2022-03-04 12:54:33,459:INFO:Query executed - SELECT emp.ename, jh.empno, dept.dname,dept.deptno,round((jh.enddate - jh.startdate)/30) * jh.sal as total_compensation,round((enddate - startdate)/30) as emp_month_spent from jobhist as jh inner join emp on (jh.empno = emp.empno) inner join dept on (jh.deptno = dept.deptno);
+2022-03-04 12:54:33,460:DEBUG:Query Executed- SELECT emp.ename, jh.empno, dept.dname,dept.deptno,round((jh.enddate - jh.startdate)/30) * jh.sal as total_compensation,round((enddate - startdate)/30) as emp_month_spent from jobhist as jh inner join emp on (jh.empno = emp.empno) inner join dept on (jh.deptno = dept.deptno);
+2022-03-04 12:54:33,460:INFO:Cursor and Connection Closed
+2022-03-04 12:54:33,476:INFO:Loaded to xlxs
+2022-03-04 12:54:33,503:INFO:Task 4 completed!!!

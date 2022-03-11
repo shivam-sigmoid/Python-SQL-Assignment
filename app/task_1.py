@@ -7,7 +7,7 @@ def task_1_select_query():
     try:
         db = MyDatabase()
         # Query to list out Emp no, Emp name and their managers.
-        query_pipeline = "select emp1.empno, emp1.ename, emp2.ename from emp as emp1 INNER JOIN emp as emp2 on (emp1.mgr = emp2.empno);"
+        query_pipeline = "select emp1.empno, emp1.ename, emp2.ename from emp as emp1 LEFT JOIN emp as emp2 on (emp1.mgr = emp2.empno);"
         result = db.query(query_pipeline)
         logging.debug(f"Query Executed- {query_pipeline}")
         return result

@@ -288,3 +288,18 @@
 2022-03-04 12:54:33,460:INFO:Cursor and Connection Closed
 2022-03-04 12:54:33,476:INFO:Loaded to xlxs
 2022-03-04 12:54:33,503:INFO:Task 4 completed!!!
+2022-03-10 09:30:34,764:INFO:Database Connected
+2022-03-10 09:30:34,768:INFO:Query executed - select emp1.empno, emp1.ename, emp2.ename from emp as emp1 INNER JOIN emp as emp2 on (emp1.mgr = emp2.empno) or (emp1.mgr is NULL);
+2022-03-10 09:30:34,768:DEBUG:Query Executed- select emp1.empno, emp1.ename, emp2.ename from emp as emp1 INNER JOIN emp as emp2 on (emp1.mgr = emp2.empno) or (emp1.mgr is NULL);
+2022-03-10 09:30:34,768:INFO:Cursor and Connection Closed
+2022-03-10 09:30:35,316:INFO:Loaded to xlxs
+2022-03-10 09:32:27,292:INFO:Database Connected
+2022-03-10 09:32:27,295:INFO:Query executed - select emp1.empno, emp1.ename, emp2.ename from emp as emp1 INNER JOIN emp as emp2 on (emp1.mgr = emp2.empno);
+2022-03-10 09:32:27,295:DEBUG:Query Executed- select emp1.empno, emp1.ename, emp2.ename from emp as emp1 INNER JOIN emp as emp2 on (emp1.mgr = emp2.empno);
+2022-03-10 09:32:27,295:INFO:Cursor and Connection Closed
+2022-03-10 09:32:27,409:INFO:Loaded to xlxs
+2022-03-11 14:45:16,533:INFO:Database Connected
+2022-03-11 14:45:16,537:INFO:Query executed - select emp1.empno, emp1.ename, emp2.ename from emp as emp1 LEFT JOIN emp as emp2 on (emp1.mgr = emp2.empno);
+2022-03-11 14:45:16,537:DEBUG:Query Executed- select emp1.empno, emp1.ename, emp2.ename from emp as emp1 LEFT JOIN emp as emp2 on (emp1.mgr = emp2.empno);
+2022-03-11 14:45:16,537:INFO:Cursor and Connection Closed
+2022-03-11 14:45:16,634:INFO:Loaded to xlxs
